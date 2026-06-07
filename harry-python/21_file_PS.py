@@ -36,6 +36,7 @@
 
 #     print('Current score is:', score)
 
+#      if score is greater than high score write it to that file
 #     if score > hiscore:
 #         with open('harry-python/hi-score.txt', 'w') as f:
 #             f.write(str(score))
@@ -50,16 +51,30 @@
 # 3. Write a program to generate multiplication tables from 2 to 20 and write it to the
 # different files. Place these files in a folder for a 13 – year old.
 
-# def ganerate_table(num):
+# def generate_table(num):
 #     with open(f'harry-python/tables/mul_table_of_{num}.txt', 'w') as f:
 #         for i in range(1, 11):
 #             f.write(f'{num} X {i} = {num*i}\n') 
 
 # for i in range(2, 21):
-#     ganerate_table(i)
+#     generate_table(i)
 #     print(f'Multiplication table of {i} is generated')
 
 
+
+# create tables using tables string and write that into the file
+# def  generate_table(num):
+#     table = ""
+#     for i in range(1,11):
+#         table += f"{num} X {i} = {num*i}\n"
+
+#     print(table)
+#     with open(f'shubham-py/harry-python/new-tables/table{num}.txt','w') as f:
+#         f.write(table)
+ 
+# for i in range(2,21):
+#     generate_table(i)
+#     print(f'multiplication table of {i} created')
 
 
 # if dont have tables folder then create it
@@ -153,6 +168,7 @@
 #     if 'python' in line.lower():
 #         found = True
 #         print(f'Python is present in line number {line_no}')
+#         break
 #     line_no += 1
 # else:
 #     if not found:
@@ -160,7 +176,30 @@
 
 # f.close()
 
+# Solutiuon 2
+# with open('harry-python/log.txt') as f:
+#     lines = f.read()
 
+# word = 'python'
+# lineno = 1
+# for line in lines:
+#     if word in line:
+#         print(f'{word} is present in line {lineno}')
+#         break
+#     lineno +=  1
+
+# else:
+#     print(f'{word} is present in line {lineno}')
+
+
+# Solution 3
+# with open('harry-python/log.txt') as f:
+#     for line_no, line in enumerate(f, start=1):
+#         if 'python' in line.lower():
+#             print(f'Python is present in line number {line_no}')
+#             break
+#     else:
+#         print('Python is not present in the file')
 
 # 8. Write a program to make a copy of a text file “this. txt”
 # with open('harry-python/this.txt') as f:
@@ -191,6 +230,6 @@
 #     f.write('')
 
 # 11. Write a python program to rename a file to “renamed_by_ python.txt.
-import os
-os.rename('harry-python/this_copy.txt', 'harry-python/renamed_by_python.txt')
+# import os
+# os.rename('harry-python/this_copy.txt', 'harry-python/renamed_by_python.txt')
 

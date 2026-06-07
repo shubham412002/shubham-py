@@ -104,7 +104,7 @@ print(result)  # ['a', 'b', 'c,d']
 
 words = ['Hello', 'World']
 res = ' '.join(words)
-print(res)
+print(res)  #Hello world
 
 
 # Example 2: Joining with hyphen

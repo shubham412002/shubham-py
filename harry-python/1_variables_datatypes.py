@@ -7,7 +7,7 @@ _usrName = 'SPatankar'
 # 1. Variable names can only contain letters, numbers, and underscores.
 #    They cannot contain spaces or special characters (e.g., @, #, $, etc.).
 #  varibales names should only start with a letter or an underscore.
-# 2. Variable names cannot start with a number.
+# 2. Variable names cannot start with a number. for eg 1name = 'Shubh" is not valid
 # 3. Variable names are case-sensitive.
 # 4. Variable names cannot be a Python keyword (e.g., `if`, `else`, `while`, etc.).
 
@@ -53,11 +53,11 @@ nothing = None
 # 7. Binary Types -
 # 7a. bytes - immutable sequence of bytes
 binary_data = b"Hello, World!"
+print(binary_data)
 
 # 7b. bytearray - mutable sequence of bytes
 mutable_binary_data = bytearray(b"Hello, World!")
+print(mutable_binary_data)
 
 # 7c. memoryview - allows access to the internal data of an object that supports the buffer protocol
 memory_view = memoryview(binary_data)
-
-

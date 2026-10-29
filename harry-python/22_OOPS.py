@@ -64,7 +64,7 @@ shubh.greet()
 
 
 # Static Methods 
-# If we dont want anyh method to use self parameter then we have to assign that method as static method.
+# If we dont want any method to use self parameter then we have to assign that method as static method.
 # just like greet in below example dont require any object related things so mark itr as static method
 # in this case will not get any error even without any self
 
